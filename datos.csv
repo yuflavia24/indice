@@ -1,12 +1,10 @@
-,,,,,,,,,
-,,,,,,,,,
-FOTO,NOMBRE/TÍTULO,TIPO,CATEGORÍA,AÑO,PAÍS,PROVINCIA/CIUDAD,CONTINENTE,MOVIMIENTO/ESTILO,COLOR
-,La Sagrada Familia,Obra,Arquitectura,1882,España,Barcelona,Europa,Modernismo catalán,Beige
-,Ludwig van Beethoven,Persona,Músico,1770,Alemania,Bonn,Europa,Clasicismo/Romanticismo,Gris
-,Machu Picchu,Lugar,Patrimonio,1450,Perú,Cusco,América,Incaico,Verde
-,Le Corbusier,Persona,Arquitecto,1887,Suiza,La Chaux-de-Fonds,Europa,Modernismo,Gris
-,David Bowie,Persona,Músico,1947,Reino Unido,Londres,Europa,Glam Rock,Multicolor
-,Bauhaus,Movimiento,Diseño/Arte,1919,Alemania,Weimar,Europa,Bauhaus,Blanco
-,Casa Curutchet,Obra,Arquitectura,1949,Argentina,La Plata,América,Modernismo,Blanco
-,Yayoi Kusama,Persona,Artista Visual,1929,Japón,Matsumoto,Asia,Arte Contemporáneo,Rojo
-,Museo del Louvre,Lugar,Museo,1793,Francia,París,Europa,Neoclásico/Gótico,Gris
+NOMBRE/TÍTULO,TIPO,CATEGORÍA,AÑO,PAÍS,PROVINCIA/CIUDAD,CONTINENTE,MOVIMIENTO/ESTILO,COLOR,FOTO
+La Sagrada Familia,Obra,Arquitectura,1882,España,Barcelona,Europa,Modernismo catalán,Beige,
+Ludwig van Beethoven,Persona,Músico,1770,Alemania,Bonn,Europa,Clasicismo/Romanticismo,Gris,
+Machu Picchu,Lugar,Patrimonio,1450,Perú,Cusco,América,Incaico,Verde,
+Le Corbusier,Persona,Arquitecto,1887,Suiza,La Chaux-de-Fonds,Europa,Modernismo,Gris,
+David Bowie,Persona,Músico,1947,Reino Unido,Londres,Europa,Glam Rock,Multicolor,
+Bauhaus,Movimiento,Diseño/Arte,1919,Alemania,Weimar,Europa,Bauhaus,Blanco,
+Casa Curutchet,Obra,Arquitectura,1949,Argentina,La Plata,América,Modernismo,Blanco,
+Yayoi Kusama,Persona,Artista Visual,1929,Japón,Matsumoto,Asia,Arte Contemporáneo,Rojo,
+Museo del Louvre,Lugar,Museo,1793,Francia,París,Europa,Neoclásico/Gótico,Gris,

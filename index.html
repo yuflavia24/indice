@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Índice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            letter-spacing: 10px;
+        }
+        .busqueda {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 400px;
+            height: 30px;
+            font-size: 16px;
+            padding: 5px;
+            border: 2px solid black;
+        }
+        button {
+            height: 42px;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 0 20px;
+            border: 2px solid black;
+            background-color: white;
+            cursor: pointer;
+        }
+        .resultados {
+            border: 2px solid black;
+            padding: 10px;
+            height: 300px;
+            overflow-y: auto;
+        }
+        .resultado-item {
+            padding: 5px 0;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>INDICE</h1>
+
+    <div class="busqueda">
+        <input type="text" id="entrada" placeholder="Escribe una palabra o número...">
+        <button onclick="buscar()">BUSCAR</button>
+    </div>
+
+    <div class="resultados" id="resultados"></div>
+
+    <script>
+        const API_URL = "https://script.google.com/macros/s/AKfycbxa211JFur19O6XEidWvNZTmFFDjSURPYCMl9hPXo85KJc_0VnSVPeVIDg1X617AZLyBA/exec";
+
+        function buscar() {
+            const q = document.getElementById("entrada").value.trim();
+            const cont = document.getElementById("resultados");
+            cont.innerHTML = "Buscando...";
+
+            fetch(`${API_URL}?q=${encodeURIComponent(q)}`)
+                .then(res => res.json())
+                .then(data => {
+                    cont.innerHTML = "";
+                    if (data.length === 0) {
+                        cont.innerHTML = "No se encontraron coincidencias.";
+                    } else {
+                        data.forEach(fila => {
+                            cont.innerHTML += `<div class="resultado-item">${fila.join(" | ")}</div>`;
+                        });
+                    }
+                })
+                .catch(err => {
+                    cont.innerHTML = "Ocurrió un error al buscar.";
+                    console.error(err);
+                });
+        }
+    </script>
+</body>
+</html>
+  

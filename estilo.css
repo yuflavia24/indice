@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.buscador {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 14px;
+}
+
+button {
+  width: 25%;
+  padding: 10px;
+  border: 1px solid black;
+  background: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.tabla-contenedor {
+  border: 1px solid black;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
